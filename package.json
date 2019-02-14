@@ -1,29 +1,36 @@
 {
   "name": "@rancher/ember-cookies",
+<<<<<<< HEAD
   "version": "0.4.0",
+=======
+  "version": "0.3.3",
+>>>>>>> Upgrade to Ember 3.7
   "description": "Cookies abstraction for Ember.js that works both in the browser as well as with Fastboot on the server.",
   "keywords": [
     "ember-addon"
   ],
+  "repository": "https://github.com/simplabs/ember-cookies",
   "license": "MIT",
   "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/simplabs/ember-cookies",
   "scripts": {
     "build": "ember build",
     "lint": "eslint app addon blueprints config server test-support tests *.js",
     "nodetest": "node node-tests/runner.js",
+    "lint:hbs": "ember-template-lint .",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
     "ember-cli-babel": "^7.1.2",
-    "ember-getowner-polyfill": "^1.1.0 || ^2.0.0"
+    "eslint-plugin-node": "^8.0.1"
   },
   "devDependencies": {
+    "@ember/jquery": "^0.6.0",
+    "@ember/optional-features": "^0.6.3",
     "broccoli-asset-rev": "^3.0.0",
     "chai": "^4.1.0",
     "chalk": "^2.0.1",
@@ -55,7 +62,7 @@
     "symlink-or-copy": "^1.1.8"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "6.* || 8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
