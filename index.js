@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cookies',
+  name: '@rancher/ember-cookies',
 
   treeForAddonTestSupport(tree) {
     return this.preprocessJs(tree, '/', this.name, {
